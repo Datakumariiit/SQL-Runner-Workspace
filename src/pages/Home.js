@@ -9,7 +9,7 @@ const Home = () => {
   const [result, setResult] = useState(queries[0].data);
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", flexDirection: "column" }}>
       <h2>SQL Runner App</h2>
       <QuerySelector queries={queries} setQuery={setQuery} setResult={setResult} />
       <QueryEditor query={query} setQuery={setQuery} />
